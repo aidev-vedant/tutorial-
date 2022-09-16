@@ -1,24 +1,24 @@
 <?php
 // Interface definition
 interface Animal {
-  public function makeSound();
+  public function makenoise();
 }
 
 // Class definitions
 class Cat implements Animal {
-  public function makeSound() {
+  public function makenoise() {
     echo " Meow ";
   }
 }
 
 class Dog implements Animal {
-  public function makeSound() {
+  public function makenoise() {
     echo " Bark ";
   }
 }
 
 class Mouse implements Animal {
-  public function makeSound() {
+  public function makenoise() {
     echo " Squeak ";
   }
 }
@@ -30,10 +30,7 @@ $mouse = new Mouse();
 $animals = array($cat, $dog, $mouse);
 
 // Tell the animals to make a sound
-foreach($animals as $animal) {
+foreach($abc as $animal) {
   $animal->makeSound();
 }
 ?>
-
-//output
-//Meow Bark  Squeak
